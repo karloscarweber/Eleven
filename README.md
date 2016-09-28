@@ -1,6 +1,6 @@
 # Eleven
 
-Monserrat is a [Ghost](http://github.com/tryghost/ghost/) theme inspired by Artsy Print Newspapers with lots of whitespace.
+Eleven is a [Ghost](http://github.com/tryghost/ghost/) theme inspired by Artsy Print Newspapers with lots of whitespace.
 
 To see it in action, visit [kow.fm](http://www.kow.fm).
 
