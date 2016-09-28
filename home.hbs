@@ -1,0 +1,30 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+<div class="grid-block homepageMasthead clearfix">
+
+    {{> "masthead"}}
+
+    {{#foreach posts limit="1"}}
+      {{#if image}}
+        <div class="featuredImageBackground" style="background-image:url({{image}});"></div>
+      {{/if}}
+      
+      <div class="article-intro clearfix">
+          <h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
+          <p><a class="read-more" href="{{url}}">{{excerpt words="36"}}</a></p>
+          <a href="{{url}}" class="articlebutton">Read More</a>
+      </div>
+    {{/foreach}}
+
+</div>
+
+{{! The main content area on the homepage }}
+<main id="content" class="content grid-block clearfix" role="main">
+  <h2 class="messageoftheday">Sometimes it's okay to not know what to say.</h2>
+</main>
+
+<div class="grid-row homepageGrid-row">
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> "loop"}}
+</div>

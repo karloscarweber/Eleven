@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link rel="shortcut icon" href="{{asset "favicon.ico"}}"> -->
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700|Karla:400,700" rel="stylesheet">
+    <link href="//cloud.typenetwork.com/projects/515/fontface.css/" rel="stylesheet" type="text/css">
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+    
+    <div class="grid-wrapper">
+
+        {{! Everything else gets inserted here }}
+        {{{body}}}
+
+    </div><!-- .grid-wrapper -->
+    <div class="footer-wrapper">
+      <footer class="footer clearfix">
+        <hr>
+        <div class="column three-wide">
+          <p><strong>Whatever</strong></p>
+          <p>
+            KOW FM is a pretty sweet publication about Art, Design, &amp; Code. Written and Recorded by Karl Oscar Weber in Salt Lake City Utah. All Contents ©Copyright 2016 Karl Oscar Weber except where stated otherwise.
+          </p>
+        </div>
+        
+        <div class="column">
+          <p><strong>Pages</strong></p>
+          <ul>
+            <li><a>About</a></li>
+            <li><a>Freelance</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Museum of Swift</a></li>
+            <li><a>Favorites</a></li>
+            <li><a>Friends</a></li>
+            <li><a>Store</a></li>
+            <li><a>Schedule</a></li>
+          </ul>
+        </div>
+        
+        <div class="column">
+          <p><strong>Projects</strong></p>
+          <ul>
+            <li><a>About</a></li>
+            <li><a>Freelance</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Museum of Swift</a></li>
+            <li><a>Favorites</a></li>
+            <li><a>Friends</a></li>
+            <li><a>Store</a></li>
+            <li><a>Schedule</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <p><strong>Articles</strong></p>
+          <ul>
+            <li><a>About</a></li>
+            <li><a>Freelance</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Museum of Swift</a></li>
+            <li><a>Favorites</a></li>
+            <li><a>Friends</a></li>
+            <li><a>Store</a></li>
+            <li><a>Schedule</a></li>
+          </ul>
+        </div>
+        
+        <hr>
+        
+        <p>
+          Sometimes I write a newsletter, Once in a while. Subscribe to my newsletter and I’ll rarely bug you about my availability, Interviews, Product announcements, and stuff about Art, Design, and Code.
+        </p>
+        <form class="" action="index.html" method="post">
+          <input type="text" name="email">
+          <input type="submit" name="name" value="Submit">
+        </form>
+        
+        <p>All Content <a href="{{@blog.url}}">Karl Oscar Weber</a> &copy; {{date format="YYYY"}}, find me on <a href="https://twitter.com/karloscarweber" target="_blank">Twitter</a>, and <a href="https://github.com/karloscarweber">Github</a>. I'm a Freelancer from Salt Lake City Utah. Find out more <a href="{{@blog.url}}/about">About Me</a>. I also answer email at <a href="mailto:me@kow.fm">me@kow.fm</a>.<br> Proudly published with <a href="">Ghost</a></p>
+      </footer>
+    </div>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+</body>
+</html>

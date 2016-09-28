@@ -1,0 +1,34 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+<div class="grid-block bluetext short-grid-block clearfix">
+
+    <header class="main-header">
+        <h1 class="page-title"><a href="/">{{@blog.title}}</a></h1>
+        {{navigation}}
+    </header>
+
+    <div class="article-intro clearfix">
+        <!-- <h1 class="blog-description">{{@blog.description}}</h1> -->
+        <h1 class="post-title">{{{title}}}</h1>
+    </div>
+    
+</div>
+
+<main class="content grid-block clearfix" role="main">
+    <div class="grid-row">
+        <article class="{{post_class}} grid-column double-centered-column">
+
+            <section class="post-content">
+                {{content}}
+            </section>
+
+        </article>
+    </div>
+</main>
+
+{{/post}}
