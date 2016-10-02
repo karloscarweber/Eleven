@@ -739,7 +739,7 @@ table { border-collapse: collapse; border-spacing: 0; }
     section.post-content > pre {
       width:100%;
       max-width: 580px;
-      margin:0 auto 28px;
+      margin:0 auto 30px;
       color:#1c1c1c;
       font-size:1rem;
       line-height: 1.66667rem;
@@ -756,13 +756,12 @@ table { border-collapse: collapse; border-spacing: 0; }
       }
     }
     
-    
     section.post-content > h1, section.post-content > h2, section.post-content > h3, section.post-content > h4, section.post-content > h5, section.post-content > h6 {
       font-family: 'Karla', sans-serif;
       font-weight: 600;
       width:100%;
       max-width: 580px;
-      margin:0 auto 28px;
+      margin:100px auto 30px;
       color:#373737;
     }
     section.post-content > h1 {
@@ -776,7 +775,6 @@ table { border-collapse: collapse; border-spacing: 0; }
     section.post-content > h3 {
       font-size: 1.5rem;
       line-height: 2rem;
-      font-weight: 400;
     }
     section.post-content > h4 {
       font-size: 1.5rem;
@@ -786,6 +784,7 @@ table { border-collapse: collapse; border-spacing: 0; }
     section.post-content > h5 {
       font-size: 1rem;
       line-height: 1.5rem;
+      font-weight: 400;
     }
     section.post-content > h6 {
       font-size: 1rem;
@@ -840,13 +839,13 @@ table { border-collapse: collapse; border-spacing: 0; }
       font-size:1rem;
       line-height:1.666667rem;
       font-weight: 600;
-      -webkit-font-smoothing: antialiased;
+      -webkit-font-smoothing: antialiased;  
       font-smoothing: antialiased;
     }
     @media (max-width:640px) {
       .post-template section.post-content > p:first-child {
-        font-size: 1.25rem;
-        line-height: 1.875rem;
+        font-size:1rem;
+        line-height:1.666667rem;
       }
     }
     
@@ -859,8 +858,7 @@ table { border-collapse: collapse; border-spacing: 0; }
     
     .post-template .post-header {
       width:100%;
-      max-width: 780px;
-      margin:100px auto 50px;
+      margin:0px auto 100px;
     }
     .post-template .post-header .post-title {
       width:100%;
@@ -1069,7 +1067,15 @@ table { border-collapse: collapse; border-spacing: 0; }
         margin-right:0px;
       }
     }
-    
+    @media (max-width: 580px) {
+      footer.footer .column {
+        width:100%;
+        max-width: 100%;
+        margin-right:0px;
+        margin-left:0px;
+        float:left;
+      }
+    }
     
     footer.footer ul {
       padding: 0px;
@@ -1078,12 +1084,13 @@ table { border-collapse: collapse; border-spacing: 0; }
     }
     footer.footer ul li a {
       font-weight: 400;
+      text-decoration: none;
     }
     
     footer.footer p {
       margin-bottom:1rem;
     }
-    footer.footer p, footer.footer .poweredby, footer.footer ul li a {
+    footer.footer p, footer.footer .poweredby, footer.footer ul li a, .newsletterform input {
       font-family: "Input Mono Reg";
       font-style: Normal;
       font-weight: Normal;
@@ -1101,6 +1108,44 @@ table { border-collapse: collapse; border-spacing: 0; }
     footer.footer p a:hover, footer.footer .poweredby a:hover {
       text-decoration:none;
       border:none;
+    }
+    footer.footer ul li a:hover {
+      text-decoration:underline;
+    }
+    
+    /* newsletterform */
+    .newsletterform input {
+      display: block;
+      padding:20px 15px;
+      border:2px solid #373737;
+      font-size:20px;
+      line-height:20px;
+      float:left;
+      box-sizing:border-box;
+    }
+    .newsletterform input[type=text] {
+      margin-bottom:50px;
+      color:#373737;
+    }
+    .newsletterform input[type=submit] {
+      color:#373737;
+      padding:22px 15px;
+      margin-left:20px;
+      border-bottom:12px solid #373737;
+      box-shadow: 20px 5px 0px -5px rgba(0,0,0,0.50);
+      -webkit-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out;
+      -ms-transform: translate(0px, -10px); /* IE 9 */
+      -webkit-transform: translate(0px, -10px); /* Safari */
+      transform: translate(0px, -10px);
+      background-color: white;
+    }
+    .newsletterform input[type=submit]:hover {
+      border-bottom:2px solid #373737;
+      box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.50);
+      -ms-transform: translate(0px, 0px); /* IE 9 */
+      -webkit-transform: translate(0px, 0px); /* Safari */
+      transform: translate(0px, 0px);
     }
     
     /* ==========================================================================

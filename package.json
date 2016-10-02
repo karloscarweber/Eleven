@@ -1,4 +1,12 @@
 {
   "name": "Eleven",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "author": "Karl Oscar Weber",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2"
+  }
 }
