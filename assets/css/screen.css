@@ -422,31 +422,46 @@ section.post-content > twitterwidget {
 .grid-column p img {
   width: 100%; }
 
+/*artdirected images*/
+.post-content img {
+  display: block;
+  width: 100%;
+  max-width: 780px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+  margin-top: 50px; }
+
 .post-content aside {
-  float: left;
-  max-width: 420px;
+  float: right;
+  max-width: 440px;
   width: 100%;
   box-sizing: border-box;
-  padding: 30px;
+  padding: 20px;
   background: white;
-  border-radius: 10px;
-  margin-right: 50px;
-  margin-bottom: 30px; }
+  border-radius: 0px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  border: 4px solid #373737;
+  box-shadow: 14px 14px 0px 0px rgba(0, 0, 0, 0.4); }
 
 .post-content aside > h6 {
-  color: #656565;
+  color: #373737;
   font-size: 24px;
   line-height: 32px;
+  font-weight: 600;
   font-family: 'Karla', sans-serif;
   margin: 0px 0px 16px 0px;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased; }
 
 .post-content aside > span:first-child, .post-content aside > p {
-  color: #656565;
-  font-size: 12px;
-  line-height: 20px;
-  font-family: 'Karla', sans-serif;
+  color: #373737;
+  font-size: 18px;
+  line-height: 30px;
   margin: 0px 0px 16px 0px;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased; }
@@ -457,10 +472,21 @@ section.post-content > twitterwidget {
 .post-content aside > p:last-child {
   margin: 0; }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) {
   .post-content aside {
     float: none;
-    max-width: 800px; } }
+    max-width: 980px; } }
+
+.post-content aside.sponsor {
+  height: 288px;
+  max-width: 580px;
+  float: none;
+  overflow: hidden;
+  margin: 50px auto;
+  box-sizing: content-box;
+  border: 4px solid #373737;
+  box-shadow: 14px 14px 0px 0px rgba(0, 0, 0, 0.4);
+  margin-top: 104px; }
 
 /* ==========================================================================
       9. Footers - See footer.scss
@@ -740,7 +766,10 @@ footer.footer .column.three-wide {
   margin-right: 0px; }
 
 footer.footer hr {
-  clear: both; }
+  clear: both;
+  border: none;
+  background: #373737;
+  height: 2px; }
 
 @media (max-width: 1280px) {
   footer.footer .column.three-wide {
@@ -833,7 +862,7 @@ footer.footer ul li a:hover {
 
 .newsletterform input[type=submit]:hover {
   border-bottom: 2px solid #373737;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
   -ms-transform: translate(0px, 0px);
   /* IE 9 */
   -webkit-transform: translate(0px, 0px);
