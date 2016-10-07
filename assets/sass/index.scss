@@ -1,0 +1,148 @@
+/* ==========================================================================
+  5. Index - 
+  ========================================================================== */
+@import 'utilities';
+  
+  .meta_description {
+    @include elasti-max(780px);
+    .meta-lede {
+      @include elasti-max(580px);
+      font-family:"Karla", sans-serif;
+      font-size: 24px;
+      line-height: 40px;  
+      margin-top:150px;
+      margin-bottom:0px;
+    }
+  }
+  
+  h2.featured-header {
+    font-family:"Karla", sans-serif;
+    text-align: center;
+    font-size:60px;
+    line-height: 60px;
+    font-weight: 600;
+    margin-top:150px;
+    margin-bottom:50px;
+    
+  }
+  
+  .index-post-summary footer p {
+    opacity:0.5;
+    font-family:"Karla", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    max-width:290px;
+    width:auto;
+    margin-top:10px;
+    margin-bottom:0px;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+  }
+  
+  .index-post-summary footer p, .index-post-summary footer.post-meta a, .index-post-summary footer.post-meta a:visited {
+      color:#373737;
+  }
+  
+  .index-post-summary section.post-excerpt {
+      margin-bottom:20px;
+  }
+  .index-post-summary section.post-excerpt p {
+    margin:0px;
+    text-align:left;
+    font-family: 'Karla', sans-serif;
+    font-size:1.5rem;
+    line-height: 34px;
+    color:#767676;
+    -webkit-font-smoothing: antialiased;
+  }
+  @media (max-width:640px) {
+    .index-post-summary section.post-excerpt p {
+      font-size:0.8rem;
+      line-height: 1.25rem;
+    }
+  }
+  
+  .index-post-summary a.index-post-button, .index-post-summary a.index-post-button:visited {
+    display:inline-block;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    font-weight:500;
+    line-height: 1.5rem;
+    margin-bottom:20px;
+    padding:10px 20px;
+    color:#373737;
+    border:1px solid #373737;
+    border-radius: 6px;
+    text-decoration: none;
+    text-transform:uppercase;
+    transition: all 0.15s ease-in-out;
+  }
+  
+  .index-post-summary a.index-post-button:hover {
+    background:#373737;
+    color: white;
+    -webkit-font-smoothing:antialiased;
+    font-smoothing:antialiased; 
+  }
+  
+  /* Featured posts on the homepage */
+  .index-post-summary-featured {
+    height: auto;
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    background:transparent;
+    margin-top:50px;
+    margin-bottom:50px;
+    
+    img {
+      width:100%;
+      box-sizing: border-box;
+      border: 2px solid #000000;
+      box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.5);
+    }
+    .post-header .post-title, .post-header .post-title a, .post-header .post-title a:visited {
+      color:#373737;
+    }
+    .article-intro {
+        position: absolute;
+        bottom:40px;
+        left:40px;
+        width:calc(100% - 120px);
+    }
+    
+    footer p {
+      opacity:0.5;
+      font-family: 'Karla', sans-serif;
+      font-size: 12px;
+      line-height: 16px;
+      max-width:290px;
+      width:auto;
+      margin-top:10px;
+      margin-bottom:0px;
+      -webkit-font-smoothing: antialiased;
+      font-smoothing: antialiased;
+    }
+  }
+  @media (max-width:640px) {
+    .index-post-summary-featured {
+      // padding: 20px;
+    }
+  }
+  
+  /* message of the day */
+  .messageoftheday {
+    font-size:50px;
+    line-height: 70px;
+    margin:160px 0px;
+    text-align:center;
+  }
+  @media (max-width:640px) {
+    .messageoftheday {
+      font-size: 25px;
+      line-height: 25px;
+      margin: 20px 0px;
+    }
+  }

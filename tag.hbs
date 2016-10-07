@@ -6,15 +6,12 @@
 </div>
 
 <div class="grid-block grid-block-780 clearfix meta_description">
-  <p class="meta-lede">{{meta_description}}</p>
-</div>
-
-<div class="grid-block grid-block-780 clearfix">
-  {{> "featuredloop"}}
+  {{#tag}}
+  <h2 class="featured-header">Tag: {{name}}</h2>
+  {{/tag}}
 </div>
 
 <div class="grid-block grid-block-580">
-    {{! The tag below includes the post loop - partials/loop.hbs }}
-    <h2 class="featured-header">All Articles</h2>
-    {{> "loop"}}
+  {{! The tag below includes the post loop - partials/loop.hbs }}
+  {{> "loop"}}
 </div>

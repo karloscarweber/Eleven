@@ -1,0 +1,96 @@
+/* ==========================================================================
+  2. Typography - 
+  ========================================================================== */
+  
+  /* 
+  Headers and paragraphs obviously expand to fill the width of their containg block.  
+  all typographic elements only have bottom margins, never any other margins.
+  */
+  
+  body, html {
+      font-size:18px;
+      font-family: 'Bitter', georgia, serif;
+      color:#272727;
+  }
+  
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    margin-bottom:1rem;
+    margin-top:0rem;
+    letter-spacing: 0px;
+  }
+  h1 {
+      font-size:2rem;
+  }
+  h2 {
+      font-size:2rem;
+  }
+  h3 {
+      font-size:1.5rem;
+  }
+  h4 {
+      font-size:1.25rem;
+  }
+  h5 {
+      font-size:1rem;
+  }
+  h6 {
+      font-size:0.75rem;
+  }
+  @media (max-width:960px) {
+      h1 {
+        font-size:2rem;
+      }
+      h2 {
+          font-size:1.75rem;
+      }
+      h3 {
+          font-size:1.5rem;
+      }
+      h4 {
+          font-size:1.2rem;
+      }
+      h5 {
+          font-size:1rem;
+      }
+      h6 {
+          font-size:0.75rem;
+      }
+
+  }
+  @media (max-width:640px) {
+      h1 {
+        font-size:1.5rem;
+      }
+      h2 {
+          font-size:1.25rem;
+      }
+      h3 {
+          font-size:1rem;
+      }
+      h4 {
+          font-size:0.9rem;
+      }
+      h5 {
+          font-size:0.8rem;
+      }
+      h6 {
+          font-size:0.75rem;
+      }
+  }
+  
+  p {
+      font-size:1rem;
+      line-height: 1.5rem;
+      margin-bottom:2rem;
+      margin-top:0px;
+  }
+  
+  /* Never style raw anchor tags., only a tags inside of another element */
+  /*a*/ p > a {
+      text-decoration: underline;
+      color:inherit;
+      font-size:inherit;
+  }

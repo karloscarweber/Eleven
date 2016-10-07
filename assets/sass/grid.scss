@@ -1,0 +1,114 @@
+/* ==========================================================================
+   1. Grid - 4 column, responsive grid
+   ========================================================================== */
+   
+   body {
+     background-color: #E4EBF0;
+     background-color: #F7F7F7;
+   }
+   
+   /*
+    Max Width: 1180px
+    max Column Width: 250px;
+    Gutter width: 40px;
+    Outer Margins: 80px;
+   */
+   
+   .grid-wrapper {
+       display: block;
+       position: relative;
+       width: 100%;
+       max-width: 1280px;
+       height: auto;
+       margin:0 auto;
+       padding:50px;
+       box-sizing: border-box;
+   }
+   @media (max-width:640px) {
+     .grid-wrapper {
+       padding:20px;
+     }
+   }
+   
+   /*
+   .grid-blocks hold contents inside of Grid wrappers.
+   they are like little boxes and stuff.
+   They can be different colors, but are usually colorless.
+   */
+   .grid-block {
+      display: block;
+      position: relative;
+      box-sizing: border-box;
+      width: 100%;
+      height: auto;
+      padding: 0px;
+      margin: 0px auto;
+      
+      &.grid-block-780 {
+        max-width: 780px;
+      }
+      
+      &.grid-block-580 {
+        max-width: 580px;
+      }
+      
+   }
+   
+   .grid-row {
+       display: block;
+       position: relative;
+       width: 100%;
+       height: auto;
+       clear:both;
+   }
+   
+   .grid-column {
+       display: block;
+       width:100%;
+       float:left;
+   }
+   
+   /* Single Column is centered */
+   .grid-column.single-column {
+       width:25%;
+       max-width: 250px;
+       margin-right:40px;
+   }
+   .grid-column.single-column:nth-child(4n+0) {
+       margin-right:0px;
+   }
+   
+   .grid-column.double-column {
+       width:45%;
+       width:calc(50% - 40px);
+       max-width:540px;
+       margin-right:40px;
+       margin-bottom:40px;
+       max-height: 360px;
+   }
+   @media (max-width: 960px) {
+       .grid-column.double-column {
+           width: 100%;
+           max-width: 100%;
+           margin-left:auto;
+           margin-right:auto;
+       }
+   }
+
+   /* Centered Double*/
+   .grid-column.double-centered-column {
+       width: 45%;
+       width: calc(50% - 20px);
+       max-width: 540px;
+       margin-right: 0%;
+       margin-left: 55%;
+       margin-left: calc(50% + 20px);
+       float: none;
+   }
+   @media (max-width: 960px) {
+       .grid-column.double-centered-column {
+           width: 100%;
+           margin-left:auto;
+           margin-right:auto;
+       }
+   }

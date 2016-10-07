@@ -1,0 +1,15 @@
+/*
+  Utilities
+*/
+@mixin elasti-max($max-width) {
+  display:block;
+  position: relative;
+  margin:0px auto;
+  width:100%;
+  max-width:$max-width;
+}
+
+.block {
+  display:block;
+  position:relative;
+}

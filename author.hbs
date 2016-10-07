@@ -6,15 +6,13 @@
 </div>
 
 <div class="grid-block grid-block-780 clearfix meta_description">
-  <p class="meta-lede">{{meta_description}}</p>
-</div>
-
-<div class="grid-block grid-block-780 clearfix">
-  {{> "featuredloop"}}
+  {{#author}}
+  <h2 class="featured-header" style="margin-bottom:0px;">{{name}}</h2>
+  <p class="meta-lede" style="margin-top:0px;margin-bottom:50px;">{{bio}}</p>
+  {{/author}}
 </div>
 
 <div class="grid-block grid-block-580">
-    {{! The tag below includes the post loop - partials/loop.hbs }}
-    <h2 class="featured-header">All Articles</h2>
-    {{> "loop"}}
+  {{! The tag below includes the post loop - partials/loop.hbs }}
+  {{> "loop"}}
 </div>

@@ -1,0 +1,142 @@
+/* ==========================================================================
+  3. Header - 
+  ========================================================================== */
+.main-header {
+    text-decoration: none;
+    color:#D8DEE3;
+    display: block;
+    position: relative;
+    z-index: 10;
+    border-bottom: 2px solid black;
+    height: 77px;
+}
+
+/* ==========================================================================
+  4. Navigation - 
+  ========================================================================== */
+.main-header .page-title {
+  font-family: 'Karla', sans-serif;
+  font-size:1rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  float:left;
+  margin:0px;
+  
+  a {
+    display:block;
+    width:102px;
+    height:65px;
+    background-image:url(../images/iPodLogo.svg);
+    background-position: center;
+    background-size:102px 65px;
+    text-indent: -60000px;
+  }
+  
+  
+}
+@media (max-width:640px) {
+    .main-header .page-title {
+        margin-bottom:20px;
+        clear:both;
+    }
+}
+
+.main-header .main-nav {
+  right: 0;
+  margin-top: 13px;
+  bottom: 10px;
+  position: absolute;
+  padding-left:92px;
+}
+.main-header .main-nav ul {
+  display: inline;
+  padding: 0px;
+  margin: 0px;
+}
+.main-header .main-nav ul li {
+  list-style-type: none;
+  display: inline;
+}
+.main-header .main-nav a {
+  float:right;
+  margin-left:20px;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+  border-bottom:1px solid transparent;
+  font-family: "Input Mono Reg";
+  font-style: Normal;
+  font-weight: Normal;
+  font-size:1rem;
+  line-height:1rem;
+  
+  color:#1C1C1C;
+}
+    
+.main-header .main-nav a:hover {
+    border-bottom:1px solid #1C1C1C;
+}
+
+.pagination {
+    clear:both;
+    text-align: center;
+}
+
+.pagination a, .pagination a:hover {
+    color: #0DA5E4;
+}
+
+/*Buttons*/
+.button {
+    font-family: 'Karla', sans-serif;
+    border-width:1px;
+    border-style:solid;
+    border-color:inherit;
+    padding:15px 25px;
+    text-decoration: none;
+    width: 100px;
+    height: auto;
+    text-align: center;
+    position: relative;
+    display: block;
+    -webkit-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+    border-radius: 6px;
+    text-transform: uppercase;
+
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    -webkit-transition: all 150ms cubic-bezier(0.260, 1.480, 0.470, 0.960);
+    transition: all 150ms cubic-bezier(0.260, 1.480, 0.470, 0.960);
+}
+
+  .button:hover {
+      /*-webkit-box-shadow: 0px 10px 14px 0px rgba(0,0,0,0.20);*/
+      /*box-shadow: 0px 10px 14px 0px rgba(0,0,0,0.20);*/
+      /*transform: scale(1.01, 1.01);*/
+  }
+  .grid-block.colored .button {
+    border-color: white;
+    color: white;
+    -webkit-transition: all 300ms cubic-bezier(0.260, 1.480, 0.470, 0.960);
+    transition: all 300ms cubic-bezier(0.260, 1.480, 0.470, 0.960);
+  }
+  .grid-block.colored .button:hover {
+    background-color: white;
+    color:#1C1C1C;
+  }
+  .submitbutton:focus, .submitbutton:visited {
+      outline: none;
+  }
+
+  footer a, footer a:visited {
+      color:#0DA5E4;
+  }
+  
+  /* asides */
+  aside > a {
+      text-decoration:none;
+  }
+  
+  aside > a:hover {
+      text-decoration: underline;
+  }
