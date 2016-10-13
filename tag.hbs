@@ -7,7 +7,9 @@
 
 <div class="grid-block grid-block-780 clearfix meta_description">
   {{#tag}}
-  <h2 class="featured-header">Tag: {{name}}</h2>
+    <h2 class="featured-header">Tag: {{name}}</h2>
+    {{#if image}}<img class="author-image" src="{{image}}" alt="" />{{/if}}
+    {{#if description}}<p class="author-lede" style="margin-top:0px;margin-bottom:50px;">{{description}}</p>{{/if}}
   {{/tag}}
 </div>
 

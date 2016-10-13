@@ -1,7 +1,7 @@
 /* ==========================================================================
    Table of Contents
    ========================================================================== */
-
+  @import 'utilities';
 /*
     A.  Colors
     0.  Normalize
@@ -283,6 +283,7 @@ table { border-collapse: collapse; border-spacing: 0; }
     section.post-content > blockquote {
       width:100%;
       margin:100px auto;
+      max-width: 780px;
     }
     section.post-content > blockquote p {
       color:#373737;
@@ -318,7 +319,7 @@ table { border-collapse: collapse; border-spacing: 0; }
       width:100%;
       margin:0px auto 100px;
     }
-    .post-template .post-header .post-title {
+    .post-template .post-header .post-title, .tag-template .post-header h1.post-title {
       width:100%;
       font-family: 'Karla', sans-serif;
       font-weight: 600;
@@ -334,7 +335,6 @@ table { border-collapse: collapse; border-spacing: 0; }
       }
     }
 
-    
     /* HR */
     .post-template hr {
       
@@ -357,7 +357,6 @@ table { border-collapse: collapse; border-spacing: 0; }
     /* ==========================================================================
       8. Post Images - 
       ========================================================================== */
-    
     
     .post-header {
       img {
@@ -693,7 +692,23 @@ table { border-collapse: collapse; border-spacing: 0; }
   /* ==========================================================================
     13. Author Page.
     ========================================================================== */
-      
+  .author-image {
+      width:100%;
+      max-width:256px;
+      margin:50px auto;
+      border:0px solid #373737;
+      display:block;
+      border-radius:128px;
+  }
+  
+  .author-lede {
+      @include elasti-max(580px);
+      font-family:"Karla", sans-serif;
+      font-size: 24px;
+      line-height: 40px;  
+      margin-top:40px;
+      margin-bottom:40px;
+  }
       
   /* ==========================================================================
     14. Freelance Page

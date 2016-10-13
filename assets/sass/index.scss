@@ -146,3 +146,22 @@
       margin: 20px 0px;
     }
   }
+  
+  /* index-articles */
+  .index-articles {
+    margin-bottom: 150px;
+    & > h2 {
+      font-family: "Input Mono Reg";
+      font-style: Normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 30px;
+      border-bottom: 2px solid black;
+      margin-top: 50px;
+    }
+    article {
+      margin-bottom:20px;
+    }
+  }
+  
+  
