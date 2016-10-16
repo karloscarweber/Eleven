@@ -179,13 +179,13 @@ table { border-collapse: collapse; border-spacing: 0; }
       7. Post Typography - 
       ========================================================================== */
       
-    .post-template p a, .article-intro > p a:visited, .article-intro > p li a, .article-intro > p li a:visited {
+    /*.post-template p a,*/ .article-intro > p a:visited, .article-intro > p li a, .article-intro > p li a:visited {
       color:#0DA5E4;
       text-decoration:none;
       transition: all 0.15s ease-in-out;
       border-bottom:1px solid transparent;
     }
-    .post-template p a:hover, .article-intro > p li a:hover {
+    /*.post-template p a:hover,*/ .article-intro > p li a:hover {
       border-bottom:1px solid #0DA5E4;
     }
     /* 
@@ -604,6 +604,7 @@ table { border-collapse: collapse; border-spacing: 0; }
       line-height: 40px;  
       margin-top:40px;
       margin-bottom:40px;
+      text-align: center;
   }
       
   /* ==========================================================================

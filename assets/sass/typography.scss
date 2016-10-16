@@ -90,7 +90,10 @@
   
   /* Never style raw anchor tags., only a tags inside of another element */
   /*a*/ p > a {
-      text-decoration: underline;
+      text-decoration:underline;
       color:inherit;
       font-size:inherit;
+  }
+  p > a:hover {
+    text-decoration:none;
   }
