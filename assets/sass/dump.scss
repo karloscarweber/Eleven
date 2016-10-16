@@ -219,7 +219,7 @@ table { border-collapse: collapse; border-spacing: 0; }
       font-weight: 600;
       width:100%;
       max-width: 580px;
-      margin:100px auto 30px;
+      margin:50px auto 30px;
       color:#373737;
     }
     section.post-content > h1 {
@@ -282,13 +282,13 @@ table { border-collapse: collapse; border-spacing: 0; }
     */
     section.post-content > blockquote {
       width:100%;
-      margin:100px auto;
+      margin:50px auto;
       max-width: 780px;
     }
     section.post-content > blockquote p {
       color:#373737;
-      font-size:2.25rem;
-      line-height:3.33rem;
+      font-size:1.75rem;
+      line-height:2.5rem;
       text-align:justify;
       font-weight:600;
     }
@@ -317,9 +317,9 @@ table { border-collapse: collapse; border-spacing: 0; }
     
     .post-template .post-header {
       width:100%;
-      margin:0px auto 100px;
+      margin:0px auto 50px;
     }
-    .post-template .post-header .post-title, .tag-template .post-header h1.post-title {
+    .post-template .post-header .post-title, .tag-template .post-header h1.post-title, .author-template .post-header h1.post-title {
       width:100%;
       font-family: 'Karla', sans-serif;
       font-weight: 600;
@@ -329,7 +329,7 @@ table { border-collapse: collapse; border-spacing: 0; }
       text-align: left;
     }
     @media (max-width:640px) {
-      .post-template .post-header .post-title {
+      .post-template .post-header .post-title, .tag-template .post-header h1.post-title, .author-template .post-header h1.post-title  {
         font-size:2rem;
         line-height: 2.5rem;
       }
@@ -362,9 +362,9 @@ table { border-collapse: collapse; border-spacing: 0; }
       img {
         width:100%;
         box-sizing: border-box;
-        border: 2px solid #000000;
-        box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.5);
-        margin-top:100px;
+        border: 5px solid #000000;
+        box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.5);
+        margin-top:50px;
         margin-left:auto;
         margin-right:auto;
         max-width:780px;
@@ -440,20 +440,21 @@ table { border-collapse: collapse; border-spacing: 0; }
     @media (max-width: 980px) {
       .post-content aside {
         float: none;
-        max-width: 980px;
+        max-width: 780px;
+        margin:0px auto 50px;
       }
     }
-      
+    
     .post-content aside.sponsor {
-      height: 288px;
+      height: auto;
       max-width: 580px;
       float: none;
       overflow: hidden;
       margin: 50px auto;
       box-sizing: content-box;
       
-      border:4px solid #373737;
-      box-shadow: 14px 14px 0px 0px rgba(0,0,0,0.40);
+      border:5px solid #373737;
+      box-shadow: 5px 5px 0px 0px rgba(0,0,0,0.40);
       margin-top: 104px;
     }
     
@@ -524,112 +525,6 @@ table { border-collapse: collapse; border-spacing: 0; }
       11. Next / Previous asides -
       ========================================================================== */
     
-    .nextpreviousenclosingbox {
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    
-    aside.read-next, aside.read-previous {
-      display: block;
-      position:relative;
-      margin-bottom:0px;
-      color:white;
-      background:black;
-      margin:0px;
-      width: 50%;
-      padding:40px;
-      box-sizing: border-box;
-      float:left;
-      height:400px;
-    }
-    aside.read-next .read-next-story h3, aside.read-previous .read-prev-story h3 {
-      font-family:"SF UI Text","Karla", sans-serif;
-      font-size:16px;
-      line-height:32px;
-      margin-bottom:10px;
-      font-weight:200;
-      color:white;
-      -webkit-font-smoothing:antialiased;
-      font-smoothing:antialiased;
-      /*border-bottom:1px solid transparent;*/
-      /*transition: all 0.15s ease-in-out;*/
-    }
-    aside.read-next .read-next-story:hover, aside.read-previous .read-prev-story:hover {
-      text-decoration: none;
-    }
-    
-    aside.read-next .nextpreviousArticleTitle, aside.read-previous .nextpreviousArticleTitle, aside.read-next .nextpreviousArticleTitle:visited, aside.read-previous .nextpreviousArticleTitle:visited {
-      font-family:"SF UI Text","Karla", sans-serif;
-      font-size:30px;
-      line-height:42px;
-      margin-bottom:10px;
-      font-weight:400;
-      color:white;
-      -webkit-font-smoothing:antialiased;
-      font-smoothing:antialiased;
-    }
-    aside.read-next .nextpreviousArticleTitle:hover, aside.read-previous .nextpreviousArticleTitle:hover {
-      text-decoration:none;
-      color:white;
-    }
-    
-    .nextpreviousenclosingbox .post-excerpt p {
-      color:#ACACAC;
-      font-size:20px;
-      line-height:26px;
-      margin-bottom:0px;
-      font-weight:400;
-      -webkit-font-smoothing:antialiased;
-      font-smoothing:antialiased;
-    }
-    
-    /*Buttons*/
-    .nextpreviousButton {
-      color:white;
-      font-family: 'Karla', sans-serif;
-      border-width:1px;
-      border-style:solid;
-      border-color:white;
-      padding:10px 20px;
-      text-decoration: none;
-      width: 100px;
-      height: auto;
-      text-align: center;
-      position: relative;
-      display: block;
-      -webkit-font-smoothing:antialiased;
-      font-smoothing:antialiased;
-      border-radius: 6px;
-      text-transform: uppercase;
-      -webkit-transition: all 150ms cubic-bezier(0.260, 1.480, 0.470, 0.960);
-      transition: all 150ms cubic-bezier(0.260, 1.480, 0.470, 0.960);
-      position: absolute;
-      bottom:40px;
-    }
-    
-    .nextpreviousButton:hover {
-      text-decoration: none;
-      background-color:white;
-      color:black;
-    }
-    
-    @media (max-width: 800px) {
-      aside.read-next, aside.read-previous {
-        width: 100%;
-        padding:20px;
-        float:none;
-        height:auto;
-      }
-      .nextpreviousButton {
-        text-align: center;
-        position: relative;
-        display: block;
-        margin: 0px;
-        bottom: auto;
-        margin-top: 10px;
-
-      }
-    }
     
     
     /* ==========================================================================
@@ -694,11 +589,12 @@ table { border-collapse: collapse; border-spacing: 0; }
     ========================================================================== */
   .author-image {
       width:100%;
-      max-width:256px;
+      max-width:200px;
       margin:50px auto;
-      border:0px solid #373737;
       display:block;
-      border-radius:128px;
+      border-radius:150px;
+      border:10px solid #373737;
+      box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.5);
   }
   
   .author-lede {

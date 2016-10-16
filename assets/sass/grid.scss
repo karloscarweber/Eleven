@@ -112,3 +112,43 @@
            margin-right:auto;
        }
    }
+   
+   
+   /* 3-wide column*/
+   .grid-column.three-wide-column {
+       width: 25%;
+       width: calc(25% - 20px);
+       max-width: 280px;
+       margin-right: 20px;
+       margin-left: 0px;
+       float: left;
+   }
+   @media (max-width: 960px) {
+       .grid-column.three-wide-column {
+           float:none;
+           width: 100%;
+           margin-left:auto;
+           margin-right:auto;
+       }
+   }
+   
+   
+   /* 8-wide column, with right margin of 1 column*/
+   .grid-column.eight-wide-column {
+       width: 66%;
+       width: calc(66% - 20px);
+       max-width: 780px;
+       margin-right: calc(8.3% - 20px);
+       margin-left: 0px;
+       float: right;
+   }
+   @media (max-width: 960px) {
+       .grid-column.eight-wide-column {
+           float:none;
+           width: 100%;
+           margin-left:auto;
+           margin-right:auto;
+       }
+   }
+   
+   

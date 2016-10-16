@@ -1,0 +1,72 @@
+.sidebar {
+  
+  h4 {
+    font-family: 'Karla', sans-serif;
+    font-size:18px;
+    line-height:30px;
+    font-weight: 600;
+    margin-bottom:10px;
+  }
+  
+  .sponsorbox {
+    width:100%;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    border:4px solid black;
+    border-bottom:8px solid black;
+    box-shadow: 10px 3px 0px -3px rgba(0, 0, 0, 0.5);
+    height:135px;
+    margin-bottom:10px;
+  }
+  
+  .authoravatarbox {
+    width:125px;
+    height:125px;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    border:4px solid black;
+    box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom:10px; 
+    border-radius: 65px;
+    background-size: 125px 125px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  p {
+    font-family: "Input Mono Reg";
+    font-style: Normal;
+    font-weight: Normal;
+    font-size:0.666rem;
+    line-height:1rem;
+    text-align: justify;
+    display: inline-block;
+    margin: 0px;
+    margin-bottom:20px;
+    color:#373737;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    
+  }
+  
+}
+
+.sidebar {  
+  .sponsorbox.prologuead {
+    background-image:url(../images/ads/prologuead-1.png);
+    background-size:275px 135px;
+    background-position:center;
+    background-repeat:none;
+  }
+}
+
+.sidebar {  
+  .sponsorbox.pulsead {
+    background-image:url(../images/ads/thepulsead-1.png);
+    background-size:275px 135px;
+    background-position:right;
+    background-repeat:none;
+  }
+}
