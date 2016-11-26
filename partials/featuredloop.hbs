@@ -1,8 +1,6 @@
 {{! This is the post loop - each post will be output using this markup }}
 
-<h2 class="featured-header">Featured Articles</h2>
-
-{{#foreach posts limit="52"}}
+{{#foreach posts limit="5"}}
   {{#if featured}}
     <article class="{{post_class}} index-post-summary-featured clearfix {{#if featured}}featured{{/if}}">
       
@@ -11,12 +9,19 @@
           <p class="post-date"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMM Do YYYY"}}</time> BY {{author}} {{#if tags}}{{tags prefix=" in "}} {{/if}}</p>
       </header>
       
-      {{#if image}}
-      <a href="{{url}}"><img  src="{{image}}" /></a>
-      {{/if}}
+
+      
+      <section class="post-content">
+          {{#if image}}
+          <a href="{{url}}"><img  src="{{image}}" /></a>
+          {{else}}
+          <a class="no-image" href="{{url}}"></a>
+          {{/if}}
+          <p>{{excerpt words="80"}}</p>
+          <p><a class="square-button" href="{{url}}">Read More</a></p>
+      </section>
       
     </article>
-    
   {{/if}}
 
 {{/foreach}}
