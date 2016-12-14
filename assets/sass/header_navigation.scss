@@ -8,7 +8,7 @@
     position: relative;
     z-index: 10;
     border-bottom: 2px solid black;
-    height: 77px;
+    height: 50px;
 }
 
 /* ==========================================================================
@@ -24,11 +24,11 @@
   
   a {
     display:block;
-    width:102px;
-    height:65px;
-    background-image:url(../images/iPodLogo.svg);
+    width:114px;
+    height:40px;
+    background-image:url(../images/iPhoneLogo2.svg);
     background-position: center;
-    background-size:102px 65px;
+    background-size:114px 40px;
     text-indent: -60000px;
   }
   
@@ -36,7 +36,7 @@
 }
 @media (max-width:640px) {
     .main-header .page-title {
-        margin-bottom:20px;
+        // margin-bottom:20px;
         clear:both;
     }
 }

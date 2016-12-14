@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="737px" height="260px" viewBox="0 0 737 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>iPhoneLogo2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="-2.84217094e-14" width="133" height="260" rx="12"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="133" height="260" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="0" y="0" width="115" height="208" rx="5"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="115" height="208" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="WithSidebar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhoneLogo-Copy-3" transform="translate(-60.000000, -60.000000)">
+            <g id="iPhoneLogo2" transform="translate(60.000000, 60.000000)">
+                <text id="KOWFM" font-family="SFUIText-Light, SF UI Text" font-size="150" font-weight="300" line-spacing="150" fill="#000000">
+                    <tspan x="193" y="186">KOWFM</tspan>
+                </text>
+                <g id="iPhone-Copy-2">
+                    <use id="Rectangle-2" stroke="#000000" mask="url(#mask-2)" stroke-width="6" xlink:href="#path-1"></use>
+                    <g id="Details" transform="translate(42.000000, 11.000000)" fill="#000000">
+                        <path d="M24,241.333333 L24,241.333333 C28.0500882,241.333333 31.3333333,238.050088 31.3333333,234 C31.3333333,229.949912 28.0500882,226.666667 24,226.666667 C19.9499118,226.666667 16.6666667,229.949912 16.6666667,234 C16.6666667,238.050088 19.9499118,241.333333 24,241.333333 L24,241.333333 Z M24,244 L24,244 C18.4771525,244 14,239.522847 14,234 C14,228.477153 18.4771525,224 24,224 C29.5228475,224 34,228.477153 34,234 C34,239.522847 29.5228475,244 24,244 L24,244 Z" id="Oval-5"></path>
+                        <path d="M4,8.06666565 L4,8.06666565 C6.209139,8.06666565 8,6.27580465 8,4.06666565 C8,1.85752665 6.209139,0.0666656494 4,0.0666656494 C1.790861,0.0666656494 0,1.85752665 0,4.06666565 C0,6.27580465 1.790861,8.06666565 4,8.06666565 L4,8.06666565 Z" id="Oval-5-Copy"></path>
+                        <rect id="Rectangle" x="10" y="2" width="29" height="4" rx="2"></rect>
+                    </g>
+                    <g id="Screen" transform="translate(9.000000, 26.000000)">
+                        <rect id="Rectangle-281" fill="#000000" x="31" y="80" width="8" height="12" rx="4"></rect>
+                        <rect id="Rectangle-281-Copy" fill="#000000" x="75" y="80" width="8" height="12" rx="4"></rect>
+                        <path d="M27.140903,110.736586 C28.06118,113.061661 30.1152893,116.417143 33.6045124,119.756477 C39.3937286,125.297003 47.1857691,128.622604 57.1577607,128.622604 C67.9597439,128.622604 75.9121865,125.289225 81.3505396,119.707231 C84.6538837,116.316637 86.3743498,112.901587 87.0141263,110.519256 C87.3006085,109.452484 86.6680589,108.355455 85.6012873,108.068973 C84.5345156,107.782491 83.4374867,108.415041 83.1510045,109.481812 C83.0452244,109.875705 82.756303,110.657911 82.2323702,111.697895 C81.3390379,113.47112 80.1070081,115.25156 78.4854897,116.915907 C73.8023828,121.722707 66.8840979,124.622604 57.1577607,124.622604 C48.248893,124.622604 41.4360751,121.71493 36.3701887,116.866661 C34.6016818,115.174125 33.177899,113.360975 32.07144,111.553524 C31.6880048,110.927165 31.3728485,110.349525 31.1223971,109.836863 C30.979151,109.543644 30.8929841,109.347399 30.8601653,109.264483 C30.4536552,108.237437 29.2915284,107.734393 28.2644825,108.140903 C27.2374366,108.547413 26.7343929,109.70954 27.140903,110.736586 L27.140903,110.736586 Z" id="Line" fill="#000000"></path>
+                        <use id="Rectangle-2" stroke="#000000" mask="url(#mask-4)" stroke-width="6" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

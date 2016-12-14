@@ -355,10 +355,11 @@ section.post-content > blockquote {
 
 section.post-content > blockquote p {
   color: #373737;
-  font-size: 1.75rem;
-  line-height: 2.5rem;
-  text-align: justify;
-  font-weight: 600; }
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: center;
+  font-weight: 400;
+  font-family: Times, serif; }
 
 .post-template section.post-content > p:first-child {
   color: #373737;
@@ -957,7 +958,7 @@ body {
   max-width: 1280px;
   height: auto;
   margin: 0 auto;
-  padding: 50px;
+  padding: 20px 50px;
   box-sizing: border-box; }
 
 @media (max-width: 640px) {
@@ -1076,7 +1077,7 @@ body {
   position: relative;
   z-index: 10;
   border-bottom: 2px solid black;
-  height: 77px; }
+  height: 50px; }
 
 /* ==========================================================================
   4. Navigation - 
@@ -1090,16 +1091,15 @@ body {
   margin: 0px; }
   .main-header .page-title a {
     display: block;
-    width: 102px;
-    height: 65px;
-    background-image: url(../images/iPodLogo.svg);
+    width: 114px;
+    height: 40px;
+    background-image: url(../images/iPhoneLogo2.svg);
     background-position: center;
-    background-size: 102px 65px;
+    background-size: 114px 40px;
     text-indent: -60000px; }
 
 @media (max-width: 640px) {
   .main-header .page-title {
-    margin-bottom: 20px;
     clear: both; } }
 
 .main-header .main-nav {

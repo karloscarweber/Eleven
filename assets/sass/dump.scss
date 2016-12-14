@@ -287,10 +287,11 @@ table { border-collapse: collapse; border-spacing: 0; }
     }
     section.post-content > blockquote p {
       color:#373737;
-      font-size:1.75rem;
-      line-height:2.5rem;
-      text-align:justify;
-      font-weight:600;
+      font-size:3rem;
+      line-height:3rem;
+      text-align:center;
+      font-weight:400;
+      font-family: Times, serif;
     }
     
     .post-template section.post-content > p:first-child {
